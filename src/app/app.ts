@@ -4,12 +4,12 @@ import { ProfileCard } from "./common-ui/common-ui/profile-card/profile-card";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ProfileCard],
+  imports: [ProfileCard],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  testSignal = signal('hallo signal')
+  testSignal = signal<string>('hallo signal')
 
 
   constructor() {
