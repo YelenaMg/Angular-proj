@@ -1,1 +1,17 @@
-<p>login-page works!</p>
+<form  class="form" [formGroup]="form"
+(ngSubmit)="onSubmit()">
+    <h1>Log In</h1>
+    <label for="">
+        Telegram username
+        <input
+        formControlName="username"
+         type="text" placeholder="Enter your name">
+    </label>
+    <label for="">
+        Password
+        <input 
+        formControlName="password"
+        type="text" placeholder="Enter your password">
+    </label>
+    <button class="btn" type="submit">Sumbit</button>
+</form>
